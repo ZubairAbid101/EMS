@@ -22,11 +22,11 @@ const Employees = () => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
-  }, []);
+  }, [selectedDepartment]);
 
   useEffect(() => {
     fetchEmployees();
-  }, []);
+  }, [fetchEmployees]);
 
   const filteredEmployees = employees.filter((emp) => {
     const fullName = emp.firstName + " " + emp.lastName;
