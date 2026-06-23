@@ -55,7 +55,7 @@ const Sidebar = () => {
     },
 
     {
-      name: "payslips",
+      name: "Payslips",
       href: "/payslips",
       icon: DollarSignIcon,
     },
